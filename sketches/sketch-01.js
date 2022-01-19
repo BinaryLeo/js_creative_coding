@@ -1,3 +1,8 @@
+
+//npm install canvas-sketch-cli -g
+//canvas-sketch sketch-01 --new --open
+//canvas-sketch sketch-01 --open
+
 const canvasSketch = require('canvas-sketch');
 
 const settings = {
