@@ -26,7 +26,7 @@ const sketch = () => {
     let x,y;
     const num = 12
     const radius = width * 0.3;
-    for (i = 0; i < num; i++) {
+    for (let i = 0; i < num; i++) {
       const slice = degToRad(360 / num)
       const angle = slice * i    
       x = cx + radius * Math.sin(angle);
