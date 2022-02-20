@@ -1,8 +1,8 @@
 const canvasSketch = require('canvas-sketch');
 const settings = {
   dimensions:  [1080, 1080] //'A4'
-  //orientation: 'portrait',
-  //pixelPerInch: 300
+  //*orientation: 'portrait',
+  //*pixelPerInch: 300
 
 }
 const sketch = () => {
