@@ -5,11 +5,11 @@ const settings = {
   animate:true
 };
 
-const animate=()=>{
+/* const animate=()=>{
 console.log('animation');
 requestAnimationFrame(animate);
 }
-//animate();
+animate(); */
 const sketch = ({ context, width, height }) => {
   const agents = []
   for (let i = 0; i < 40; i++) {
@@ -54,7 +54,7 @@ class Agent {
   }
   draw(context) {
 
-    context.save();''
+    context.save();
     context.translate(this.pos.x, this.pos.y);
     context.lineWidth = 4;
     context.beginPath();
