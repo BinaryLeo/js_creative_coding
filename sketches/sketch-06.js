@@ -11,7 +11,7 @@ const sketch = ({ context, width, height }) => {
     const y = random.range(0, height);
     agents.push(new Agent(x, y))
   }
-  return ({ context, width, height }) => {
+  return () => {
     context.fillStyle = 'white';
     context.fillRect(0, 0, width, height);
 
