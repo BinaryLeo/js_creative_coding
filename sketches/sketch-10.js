@@ -78,3 +78,7 @@ class Agent {
     context.restore();
   }
 }
+
+//* export to video
+//* npm install @ffmpeg-installer/ffmpeg --global
+//* canvas-sketch sketch-10.js --output=output/10 --stream
