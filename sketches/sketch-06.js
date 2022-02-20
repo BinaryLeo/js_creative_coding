@@ -1,5 +1,5 @@
-const canvasSketch = require('canvas-sketch')
-const random = require('canvas-sketch-util/random')
+const canvasSketch = require('canvas-sketch');
+const random = require('canvas-sketch-util/random');
 const settings = {
   dimensions: [1080, 1080],
 }

@@ -1,6 +1,6 @@
-const canvasSketch = require('canvas-sketch')
-const random = require('canvas-sketch-util/random')
-const math = require('canvas-sketch-util/math')
+const canvasSketch = require('canvas-sketch');
+const random = require('canvas-sketch-util/random');
+const math = require('canvas-sketch-util/math');
 const settings = {
   dimensions: [1080, 1080],
   animate:true
@@ -38,7 +38,7 @@ const sketch = ({ context, width, height }) => {
   }
 }
 
-canvasSketch(sketch, settings)
+canvasSketch(sketch, settings);
 
 class Vector {
   constructor(x, y) {
