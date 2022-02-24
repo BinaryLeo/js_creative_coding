@@ -1,7 +1,9 @@
 const canvasSketch = require('canvas-sketch');
 const settings={
-    dimensions:[1080,1080]
+    dimensions:[1080,1080],
+    animation: true
 };
+let manager;
 let text ='A';
 let fontSize = 1200;
 let fontFamily = 'serif';
@@ -35,4 +37,12 @@ const sketch =()=>{
         context.restore();
     };
 };
-canvasSketch(sketch,settings);
+const onKeyUp = (e) => {
+    text = e.key.toUpperCase(); // Just update if animate is true
+    manager.render();
+}
+document.addEventListener('keyup', onKeyUp);
+const start = async () => {
+ manager = await canvasSketch(sketch,settings);
+}
+start();
